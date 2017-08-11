@@ -1,0 +1,101 @@
+[
+  {
+    "description": "         As a loged user on Ryanair\n         When I book a flight\n         And enter card details info\n         Then I should get payment declined message ",
+    "elements": [
+      {
+        "id": "booking-with-declined-payment;",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 10550931
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I make a booking from \"DUB\" to \"SXF\" on \"20-09-2017\" for \"2\" adults and \"0\" childs and \"0\" and \"3\" infants",
+            "result": {
+              "status": "passed",
+              "duration": 21891648224
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I choose booking options with standard fare",
+            "result": {
+              "status": "passed",
+              "duration": 10913898136
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I \"don't choose\" seats",
+            "result": {
+              "status": "passed",
+              "duration": 8257487814
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I pay for booking with card details “5555555555554444\", “10/2020” and “265”",
+            "result": {
+              "status": "passed",
+              "duration": 75443975813
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should get payment declined message",
+            "result": {
+              "status": "failed",
+              "duration": 1099004601,
+              "error_message": "AssertionError: expected 'Our systems have detected an identical reservation.\\nIf you have already made this reservation and have not yet received your confirmation email please check the following:\\nCheck your junk / spam folder for the reservation email\\nRetrieve your booking under the “My Bookings” section of the website (you will require your flight details and payment card)\\nIf you wish to proceed with this new reservation please use an alternative form of payment or wait 24 hours. Alternatively please chat online with our Customer Service team.' to equal 'As your payment was not authorised we could not complete your reservation. Please ensure that the information was correct or use a new payment to try again'"
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\step_definitions\\step_definitions.js:28"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "booking-with-declined-payment",
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Booking with declined payment",
+    "tags": [],
+    "uri": "C:\\Users\\psimanic\\Desktop\\FR_AutoTest\\features\\bookingWithDeclinedPayment.feature"
+  }
+]
